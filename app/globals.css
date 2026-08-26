@@ -1,26 +1,92 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+  --color-seashell-50: #fafafa;
+  --color-seashell-100: #f0f0f0;
+  --color-seashell-200: #e6e6e6;
+  --color-seashell-300: #d6d6d6;
+  --color-seashell-400: #a5a5a5;
+  --color-seashell-500: #767676;
+  --color-seashell-600: #575757;
+  --color-seashell-700: #434343;
+  --color-seashell-800: #292929;
+  --color-seashell-900: #1a1a1a;
+  --color-seashell-950: #0a0a0a;
+
+
+  --color-alizarin-crimson-50: #fff0f3;
+  --color-alizarin-crimson-100: #ffdee4;
+  --color-alizarin-crimson-200: #ffc3cd;
+  --color-alizarin-crimson-300: #ff99ab;
+  --color-alizarin-crimson-400: #ff5e7a;
+  --color-alizarin-crimson-500: #ff2c50;
+  --color-alizarin-crimson-600: #e5092f;
+  --color-alizarin-crimson-700: #cf0629;
+  --color-alizarin-crimson-800: #ab0925;
+  --color-alizarin-crimson-900: #8d0f25;
+  --color-alizarin-crimson-950: #4d020f;
+
+
+  --background: var(--color-seashell-950);
+
+
+  --foreground: var(--color-seashell-50);
+
+
+  --surface: var(--color-seashell-900);
+  --surface-raised: var(--color-seashell-800);
+
+
+  --border: var(--color-seashell-800);
+  --border-subtle: var(--color-seashell-900);
+
+
+  --text-primary: var(--color-seashell-50);
+  --text-secondary: var(--color-seashell-400);
+  --text-muted: var(--color-seashell-500);
+
+
+  --accent: var(--color-alizarin-crimson-600);
+  --accent-hover: var(--color-alizarin-crimson-500);
+  --accent-dark: var(--color-alizarin-crimson-700);
+
+   
 }
 
 @theme inline {
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-dark: var(--accent-dark);
+
+  --font-sans: var(--font-jakarta);
+  --font-display: var(--font-barlow);
+  --font-mono: var(--font-jetbrains);
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
+  background-image: conic-gradient(
+  from 90deg at 1px 1px,
+  #0000 90deg,
+  rgba(255, 255, 255, 0.035) 0
+);
+  background-size: 40px 40px;
+
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jakarta), sans-serif;
 }
