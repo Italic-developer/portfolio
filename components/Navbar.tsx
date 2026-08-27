@@ -6,7 +6,7 @@ function Navbar() {
       <span className="flex flex-row gap-1 hover:opacity-65 font-display">
         <span className="text-accent font-bold ">P</span>C U
       </span>
-      <ul className="flex flex-row gap-8 text-muted opacity-70 font-mono text-sm ">
+      <ul className="flex flex-row gap-8 text-text-muted opacity-70 font-mono text-sm font-black ">
         <li className="active:text-accent active:underline decoration-accent">
           <a href="#">Home</a>
         </li>
