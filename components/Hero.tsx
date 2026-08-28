@@ -14,7 +14,7 @@ export default function Hero() {
           <h1 className="font-sans text-lg text-text-secondary font-black">
             Software Engineer
           </h1>
-          <div className="mb-2 font-mono font-medium text-text-muted">
+          <div className="mb-2 font-sans font-medium text-text-muted">
             <p>
               I Build Web Applications, client Experiences and whatever you need
             </p>

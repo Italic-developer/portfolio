@@ -1,0 +1,149 @@
+[
+  {
+    "id": "weather-app",
+    "name": "Weather",
+    "type": "solo",
+    "role": "Sole Developer",
+    "image": "/projects/weather.png",
+    "keyFeatures": [
+      "Current weather conditions",
+      "Weather forecasts",
+      "Location-based weather",
+      "Responsive interface"
+    ],
+    "shortDescription": "A weather application focused on presenting accurate weather information through a clean, responsive interface.",
+    "longDescription": "A weather application built to make weather information quick and easy to understand. The project focuses on a clean interface, responsive layouts, and consuming external weather data to provide current conditions and forecasts.",
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    "year": 2026,
+    "liveDemo": "https://example.com",
+    "github": "https://github.com/italicdeveloper/weather-app"
+  },
+  {
+    "id": "echo",
+    "name": "Echo",
+    "type": "solo",
+    "role": "Sole Developer",
+    "image": "/projects/echo.png",
+    "keyFeatures": [
+      "Voice commands",
+      "Speech recognition",
+      "Text-to-speech",
+      "Location awareness",
+      "Calendar and contacts integration"
+    ],
+    "shortDescription": "A mobile voice assistant built with React Native and Expo.",
+    "longDescription": "Echo is an experimental mobile voice assistant designed to interact with the device through natural voice commands. It combines speech recognition, text-to-speech, device capabilities, and command matching to create a lightweight personal assistant.",
+    "technologies": [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Expo Speech",
+      "Fuse.js"
+    ],
+    "year": 2026,
+    "liveDemo": "",
+    "github": "https://github.com/italicdeveloper/echo"
+  },
+  {
+    "id": "mj-hairs",
+    "name": "MJ Hairs",
+    "type": "client",
+    "role": "Sole Developer",
+    "image": "/projects/mj-hairs.png",
+    "keyFeatures": [
+      "Product catalogue",
+      "Shopping cart",
+      "Wishlist",
+      "Stock management",
+      "Paystack payments",
+      "CMS-powered content"
+    ],
+    "shortDescription": "An ecommerce platform for browsing and purchasing hair products and services.",
+    "longDescription": "MJ Hairs is an ecommerce website built for selling hair products and services online. The platform includes product browsing, cart and wishlist functionality, stock management, content management through Sanity, and payment processing through Paystack.",
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Sanity",
+      "Paystack"
+    ],
+    "year": 2026,
+    "liveDemo": "",
+    "github": "https://github.com/italicdeveloper/mj-hairs"
+  },
+  {
+    "id": "yorokobi",
+    "name": "Yorokobi",
+    "type": "solo",
+    "role": "Sole Developer",
+    "image": "/projects/yorokobi.png",
+    "keyFeatures": [
+      "Anime communities",
+      "Posts and comments",
+      "User profiles",
+      "Community interaction",
+      "Follow system"
+    ],
+    "shortDescription": "An anime-focused social platform built around communities and discussion.",
+    "longDescription": "Yorokobi is a social platform concept designed around anime communities. Users can participate in dedicated communities, create posts, comment on discussions, follow other users, and discover content around their interests.",
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL"
+    ],
+    "year": 2026,
+    "liveDemo": "",
+    "github": "https://github.com/italicdeveloper/yorokobi"
+  },
+  {
+    "id": "bussin",
+    "name": "BUSSIN",
+    "type": "solo",
+    "role": "Sole Developer",
+    "image": "/projects/bussin.png",
+    "keyFeatures": [
+      "Community creation",
+      "Posts",
+      "User interaction",
+      "Authentication",
+      "Responsive interface"
+    ],
+    "shortDescription": "A community-focused social application for creating and joining online spaces.",
+    "longDescription": "BUSSIN is a community-based social application focused on creating spaces where users can interact around shared interests. The project explores social features, authentication, responsive UI design, and community-driven content.",
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Supabase"
+    ],
+    "year": 2025,
+    "liveDemo": "",
+    "github": "https://github.com/italicdeveloper/bussin"
+  },
+  {
+    "id": "spotify-sync",
+    "name": "Spotify Sync",
+    "type": "solo",
+    "role": "Sole Developer",
+    "image": "/projects/spotify-sync.png",
+    "keyFeatures": [
+      "Spotify playlist reading",
+      "Track searching",
+      "YouTube integration",
+      "Audio downloading",
+      "Opus conversion"
+    ],
+    "shortDescription": "A Python-based tool for synchronizing Spotify playlists with locally stored audio.",
+    "longDescription": "Spotify Sync is an experimental Python project that reads Spotify playlists, searches for matching tracks, downloads the highest available audio source, and converts the resulting files to Opus for local storage. The project was built as a deeper exploration of APIs, media processing, and automation.",
+    "technologies": ["Python", "Spotipy", "yt-dlp", "FFmpeg"],
+    "year": 2026,
+    "liveDemo": "",
+    "github": "https://github.com/italicdeveloper/spotify-sync"
+  }
+]
