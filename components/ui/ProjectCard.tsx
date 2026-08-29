@@ -6,7 +6,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
     <div
       className={`group ${
         index % 2 === 0 ? "hover:-rotate-3" : "hover:rotate-3"
-      } transition-transform  ease-in-out duration-300 flex flex-col relative m-6 bg-surface w-2xl border-2 border-muted/50 overflow-clip hover:border-primary/60`}
+      } transition-transform  ease-in-out duration-500 flex flex-col relative m-2 hover:shadow-2xl shadow-background bg-surface w-2xl border-2 border-muted/50 overflow-clip hover:border-primary/60`}
     >
       <div className="relative h-60 overflow-hidden">
         <p className="absolute top-5 left-5 font-mono text-xs text-muted-foreground  ease-in-out transition-colors duration-500 group-hover:text-accent z-10">

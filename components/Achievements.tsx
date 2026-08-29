@@ -1,6 +1,3 @@
-
 export default function Achievement() {
-  return (
-    <div>Hello World</div>
-  )
+  return <div className="">Hello World</div>;
 }

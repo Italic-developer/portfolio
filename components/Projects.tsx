@@ -23,7 +23,7 @@ export default function Projects() {
           <span> 2022-2025</span>
         </p>
       </span>
-      <div className="grid w-full grid-cols-2">
+      <div className="grid w-full grid-cols-2 gap-1">
         {projects.map((project, index) => (
           <ProjectCard project={project} key={project.id} index={index + 1} />
         ))}
