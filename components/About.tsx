@@ -7,18 +7,21 @@ export default function About() {
         <p className="font-mono text-xs text-accent -ml-1 mb-3">03 / PROFILE</p>
         <p className="font-display text-8xl font-black">ABOUT</p>
         <p className="font-sans text-text-secondary text-lg text-balance w-[37dvw]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          molestiae tempora nisi. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Saepe impedit distinctio voluptatum alias molestiae,
-          explicabo dolor consequatur ipsam magni ad.
+          I build things that live on the web, from full-stack applications and
+          developer tools to interactive digital experiences, with a focus on
+          clean interfaces and thoughtful engineering.
         </p>
         <p className="my-6 font-sans text-text-muted  ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-          quisquam ducimus nisi ullam dolorum nemo.
+          Currently in university and continuing to sharpen my skills through
+          personal projects and experiments. I primarily work with React,
+          Next.js, TypeScript, and modern web technologies, while exploring
+          backend systems, mobile development, and everything in between.
         </p>
         <p className=" font-sans text-text-muted  ">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
-          quis?
+          When I'm not building, I'm usually learning something new,
+          experimenting with an idea, or taking apart an existing system to
+          understand how it works. I'm interested in building software that is
+          useful, well-crafted, and worth coming back to.
         </p>
       </div>
       <div>
