@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import {
   Barlow_Condensed,
   JetBrains_Mono,
-  Plus_Jakarta_Sans, Geist, Inter } from "next/font/google";
+  Plus_Jakarta_Sans,
+  Inter,
+} from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Toaster } from "sonner";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -34,15 +37,24 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  
   return (
     <html lang="en" className={cn("font-sans", inter.variable)}>
-    
       <body
         className={`${jakarta.variable} ${barlow.variable} ${jetbrains.variable}`}
       >
         {children}
+        <Toaster
+          position="bottom-right"
+          theme="dark"
+          closeButton
+          toastOptions={{
+            classNames: {
+              toast: "achievement-toast",
+              title: "achievement-toast-title",
+              description: "achievement-toast-description",
+            },
+          }}
+        />
       </body>
     </html>
   );

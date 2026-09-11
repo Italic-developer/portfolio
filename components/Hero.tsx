@@ -1,62 +1,56 @@
 import { MoveRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col  ">
-      <div className="flex flex-row justify-around items-center h-dvh">
-        {/* 1st section */}{" "}
-        <div className="flex flex-col justify-between items-start gap-5 -mt-64">
-          <h3 className="font-mono text-sm text-text-muted">Hello I'm</h3>
-          <h1 className="font-display text-[9.2rem] leading-32 text-text-primary font-[1000] font-stretch-200% w-sm">
-            PATRICK <span className="text-accent"> UMEK</span>WE
-          </h1>
-          <h1 className="font-sans text-lg text-text-secondary font-black">
-            Software Engineer
-          </h1>
-          <div className="mb-2 font-sans font-medium text-text-muted">
-            <p>
-              I Build Web Applications, client Experiences and whatever you need
-            </p>
-            <p>Don't believe me </p>
-          </div>
-          <button className="bg-accent transition-all font-mono ">
-            <a
-              href="#projects"
-              className="gap-3 hover:gap-5 px-4 py-4 flex flex-row items-center"
-            >
-              View My Projects
-              <MoveRight
-                size={14}
-                color="#fafafa"
-                strokeWidth={3}
-                absoluteStrokeWidth
-                className="mt-0.5"
-              />
-            </a>
-          </button>
-        </div>
-        {/* 2nd section */}
-        <div className="flex flex-col h-64 w-56 -mt-32  bg-surface text-xs border-2 border-border-subtle gap-1.5 p-4 font-mono text-text-muted/50">
-          <div className="flex flex-row border-b-2 border-border-subtle justify-between  p-4 items-center">
-            <span>STATUS</span>
-            <span className="text-accent font-black font-display">ONLINE</span>
-          </div>
-          <div className="flex flex-row border-b-2 border-border-subtle justify-between p-4 items-center">
-            <span>PROJECTS</span>
-            <span className="text-text-primary font-display">06</span>
-          </div>
-          <div className="flex flex-row border-b-2 border-border-subtle justify-between  p-4 items-center">
-            <span>STACK</span>
-            <span className="text-text-primary font-display">WEB*</span>
-          </div>
-          <div className="flex flex-row border-b-2 border-border-subtle justify-between p-4 items-center">
-            <span>MODE</span>
-            <span className="text-text-primary font-display">LEARNING</span>
-          </div>
-        </div>
+    <section
+      id="home"
+      className="mx-auto flex min-h-[calc(100dvh-76px)] w-full max-w-360 flex-col justify-center gap-16 px-6 py-24 md:flex-row md:items-center md:justify-between md:px-10 md:py-28"
+    >
+      <div className="flex max-w-4xl flex-col items-start gap-6">
+        <p className="font-mono text-xs uppercase tracking-[0.18em] text-text-muted">
+          Hello, I&apos;m
+        </p>
+        <h1 className="max-w-4xl font-display text-[clamp(4.7rem,12.5vw,11rem)] font-black leading-[0.76] tracking-[-0.02em] text-text-primary">
+          PATRICK <span className="text-accent">UMEKWE</span>
+        </h1>
+        <p className="font-sans text-base font-black uppercase tracking-[0.12em] text-text-secondary md:text-lg">
+          Software Engineer
+        </p>
+        <p className="max-w-md font-sans text-sm font-medium leading-7 text-text-muted md:text-base">
+          I build web applications, client experiences, and whatever you need.
+        </p>
+        <a
+          href="#projects"
+          className="flex flex-row items-center gap-3 bg-accent px-4 py-4 font-mono text-sm text-white transition-all hover:gap-5"
+        >
+          View My Projects
+          <MoveRight size={14} strokeWidth={3} />
+        </a>
       </div>
-      <div className=""></div>
-    </div>
+      <div className="flex h-64 w-full max-w-xs flex-col gap-1.5 border border-border-subtle bg-surface/80 p-3 font-mono text-[10px] uppercase tracking-[0.12em] text-text-muted/50 md:mr-[8%] md:mt-16">
+        {[
+          ["STATUS", "ONLINE"],
+          ["PROJECTS", "06"],
+          ["STACK", "WEB*"],
+          ["MODE", "LEARNING"],
+        ].map(([label, value]) => (
+          <div
+            key={label}
+            className="flex flex-row items-center justify-between border-b border-border-subtle p-4"
+          >
+            <span>{label}</span>
+            <span
+              className={
+                label === "STATUS"
+                  ? "font-display font-black text-accent"
+                  : "font-display text-text-primary"
+              }
+            >
+              {value}
+            </span>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
