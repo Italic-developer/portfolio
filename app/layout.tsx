@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import {
   Barlow_Condensed,
   JetBrains_Mono,
@@ -39,6 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cn("font-sans", inter.variable)}>
+      <Analytics />
       <body
         className={`${jakarta.variable} ${barlow.variable} ${jetbrains.variable}`}
       >
